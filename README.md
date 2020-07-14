@@ -1,10 +1,9 @@
 # Estate-Properties-App-
-Repository contains google maps resource components used in developing estate-properties website.
+Repository contains source code of real-estate website built with php, & google-maps resources used in developing the application.
 
-Estate Properties Web-Application:
-Estate Properties is a web-based application that alllows users to sign-up and showcase estate properties for rent or sale. Program developed with PHP, HTML, CSS, JavaScript, Regex, and Bootstrap.
+The application alllows users to sign-up and showcase estate properties for rent or sale. Program developed with PHP, HTML, CSS, JavaScript, Regex, and Bootstrap.
 
-Link: http://estateproperties.epizy.com/
+Demo Link: http://estateproperties.epizy.com/
 
 
 
