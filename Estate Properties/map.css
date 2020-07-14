@@ -1,0 +1,406 @@
+/* 
+App Name: Estate Properties  
+Author: Emmanuel A.O.
+Version: 1.0
+Design and Developed by: Emmanuel A.O
+*/
+
+/*
+======================================
+[ CSS TABLE CONTENT ]
+======================================
+
+ 1. General
+
+ 2. Hook Area
+ --------------Hook
+
+ 3. Navbar
+ --------------Navbar
+
+ 4. Section One
+ --------------Container
+ --------------Title
+
+ 5. Section Two
+ --------------Map
+ --------------Property
+ --------------PropertyNames
+
+ 6. Section Three
+ --------------Collage
+
+ 7. Section Four
+ --------------Slideshow Container
+ --------------Myslides
+ --------------Prev, Next
+
+ 8. Footer
+ --------------Footer
+ --------------Smedia footer
+ --------------webName
+ --------------Create
+
+ 9. Phone Format:
+
+ a.  Hook Area
+ --------------#Remove
+
+ b.  Section One
+ --------------Container
+ --------------Title
+
+ c.  Section Two
+ --------------Map
+ --------------Property
+ --------------PropertyNames
+
+ d.  Section Three
+ --------------Collage
+
+ e.  Section Four
+ --------------Slideshow Container
+ --------------Myslides
+ 
+ f. Footer
+ --------------Footer
+ --------------Smedia footer
+ --------------Create
+
+ 10. Tablet Format: [NONE]
+
+======================================
+[ END CSS TABLE CONTENT ]
+======================================
+*/
+
+
+
+
+/* =========== General ============= */
+
+body {
+	margin: 0;
+	padding: 0;
+	background: lightblue;
+}
+
+
+/* =========== Hook Area ============= */
+
+.hook {
+	display: flex;
+	flex-direction: row;
+	background-color: #212529;
+	color: white;
+	justify-content: space-around;
+}
+.hook p {
+	font-size: 12px;
+	margin: 5px;
+}
+
+
+/* =========== Navbar ============= */
+
+.navbar {
+	opacity: 0.8;
+	font-size: 18px; 
+	background-color: #212529;
+}
+
+
+/* =========== Section One ============= */
+
+.container {
+	width: 90%;
+	left: 50%;
+	background: #3D5B6B;	
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin-bottom: 30px;
+}
+
+
+.title {
+	background: url("img/head.jpg") no-repeat;
+	background-size: cover;
+	width: 103%;
+	height: 200px;
+	margin-bottom: 10px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+.title h1 {
+	margin: 40px 5px 5px 5px;
+	text-align: center;
+	font-family: Times;
+	font-size: 75px;
+}
+.title p {
+	margin: 5px;
+	text-align: center;
+	font-size: 20px;
+	font-weight: 600;
+}
+
+
+/* =========== Section Two ============= */
+
+#map {
+	width: 103%;
+	height: 500px;
+}
+
+
+.property {	
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.propertyNames {
+	background-color: black;
+	border: 2px solid black;
+	overflow-x: hidden;
+	transition: 0.5s;
+	border-radius: 8px;
+	padding: 3px;
+	margin: 10px;
+}
+.propertyNames a {
+	color: white;
+	text-decoration: none;
+}
+.propertyNames:hover {
+	background-color: transparent;
+}
+
+
+/* =========== Section Three ============= */
+
+.collage {
+	text-align: center;
+}
+.collage img {
+	width: 210px;
+	height: 150px;
+	margin: 1px;
+	border-top-right-radius: 10px;
+	box-shadow: 2px 2px 5px black;
+	transition: 0.3s;
+}
+.collage img:hover {
+	height: 155px;
+	opacity: 0.5;
+}
+
+
+/* =========== Section Four ============= */
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  width: 95%;
+/*  background: #f1f1f1f1;*/
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 30px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+
+/* The dot/bullet/indicator container */
+.dot-container {
+  text-align: center;
+  padding: 20px;
+  /*background: #ddd;*/
+}
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+
+/* Add an italic font style to all quotes */
+q {font-style:italic; font-size:20px; color:lightgrey;}
+
+/* Add a blue color to the author */
+.author {color: cornflowerblue;}
+
+
+
+/* =========== FOOTER AREA ============= */
+
+.footer {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	background-color: #172730;
+	padding: 35px;
+	color: white;
+}
+
+
+.smediaFooter img {
+	background-color: white;
+	padding: 2px;
+	border-radius: 50%;
+
+}
+.smediaFooter img:hover {
+	background-color: transparent;
+}
+
+
+.webName a{
+	color: white;
+}
+.webName span {
+	text-decoration: none;
+	color: white;
+}
+
+
+.create button {
+	background-color: lightgrey;
+	border: 2px solid black;
+	border-radius: 8px;
+	padding: 4px;
+	color: black;
+	transition: 0.5s;
+}
+.create:hover button {
+	background-color: white;
+}
+
+
+
+/* =========== Phone Format ============= */
+
+@media (max-width: 760px) {
+
+
+/*Hook Area*/
+p#remove {
+	display: none
+}
+
+
+/*Area Structure*/
+.container {
+	width: 100%;
+	margin-bottom: 0;
+}
+
+
+/*Head Title*/
+.title {
+	background: url("img/head.jpg") no-repeat;
+	background-size: cover;
+	width: 107%;
+	height: 150px;
+	margin-bottom: 5px;
+}
+.title h1 {
+	margin: 30px 5px 5px 5px;
+	font-weight: bold;
+	font-size: 32px;
+}
+.title p {
+	color: white;
+	font-size: 16px;
+}
+
+
+/*Map */
+#map {
+	width: 107%;
+	height: 500px;
+}
+
+
+/*Property Name Listings*/
+.propertyNames {
+	margin: 15px 10px 10px 10px;
+}
+
+/*Image Collage*/
+.collage {
+	display: none;
+}
+
+
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+}
+.mySlides {
+  padding: 45px;
+}
+/* Add an italic font style to all quotes */
+q {font-style:italic; font-size:17px; color:lightgrey;}
+
+
+/*Footer Area*/
+
+.footer {
+	justify-content: center;
+}
+.smediaFooter {
+	display: none;
+}
+.create button {
+	display: none;
+}
+}
+
+
+
+/* =========== Tablet Format ============= */
+@media (min-width: 761px) and (max-width: 1224px) {
+} 

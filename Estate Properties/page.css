@@ -1,0 +1,329 @@
+/* 
+App Name: Estate Properties  
+Author: Emmanuel A.O.
+Version: 1.0
+Design and Developed by: Emmanuel A.O
+*/
+
+/*
+======================================
+[ CSS TABLE CONTENT ]
+======================================
+
+ 1. General
+
+ 2. Hook Area
+ --------------Hook
+
+ 3. Navbar
+ --------------Navbar
+
+ 4. Section One
+ --------------Container
+ --------------Title
+
+ 5. Section Two
+ --------------InfoArea
+ --------------Describe
+ --------------Features
+
+ 6. Section Three
+ --------------Flex-container
+ --------------Images
+
+ 7. Section Four
+ --------------Property
+ --------------PropertyNames
+
+ 8. Footer
+ --------------Footer
+ --------------webName
+
+
+ 9. Phone Format:
+
+ a.  Hook Area
+ --------------#Remove
+
+ b. Section One
+ --------------Container
+ --------------Title
+
+ c. Section Two
+ --------------InfoArea
+ --------------Describe
+ --------------Features
+
+ d. Section Three
+ --------------Flex-container
+ --------------Images
+
+ e. Section Four
+ --------------Property
+
+
+ 10. Tablet Format: [NONE]
+
+
+======================================
+[ END CSS TABLE CONTENT ]
+======================================
+*/
+
+
+
+
+/* =========== General ============= */
+
+body {
+	margin: 0;
+	padding: 0;
+	background: lightblue;
+}
+
+
+/* =========== Hook Area ============= */
+
+.hook {
+	display: flex;
+	flex-direction: row;
+	background-color: #212529;
+	color: white;
+	justify-content: space-around;
+}
+.hook p {
+	font-size: 12px;
+	margin: 5px;
+}
+
+
+.navbar {
+	opacity: 0.8;
+	font-size: 18px; 
+	background-color: #212529;
+}
+
+
+/* =========== Section One ============= */
+
+.container {
+	width: 90%;
+	left: 50%;
+	background: #3D5B6B;	
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin-bottom: 20px;
+}
+
+
+.title {
+	background: url("img/stars.jpg") no-repeat;
+	background-size: cover;
+	box-shadow: 2px 2px 10px black;
+	width: 100%;
+	min-height: 350px;
+	margin-bottom: 10px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+.title h1 {
+	margin: 80px 5px 5px 5px;
+	text-align: center;
+	font-family: Times;
+	font-size: 75px;
+	color: white;
+}
+
+
+/* =========== Section Two ============= */
+
+.infoArea {	
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	width: 100%;
+}
+.describe {
+	width: 54%;
+	min-height: 280px;
+	background-color: black;
+	margin: 5px 0 5px 0;
+	padding: 10px;
+	border-radius: 5px;
+	color: white;
+	box-shadow: 2px 2px 10px black;
+}
+.describe h5 {
+	font-family: Times;
+}
+.describe p {
+	margin-bottom: 0;
+}
+
+.features {
+	width: 45%;
+	min-height: 280px;
+	background-color: lightblue;
+	margin: 5px 0 5px 5px;
+	padding: 10px;
+	border-radius: 5px;
+	box-shadow: 2px 2px 10px black;
+}
+.features h5 {
+	font-family: Times;
+}
+
+
+/* =========== Section Three ============= */
+
+h2 {
+	color: black;
+	font-family: Times;
+	margin: 20px;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 40px;
+}
+.images img {
+	width: 310px;
+	height: 240px;
+	margin: 5px;
+	border-radius: 5px;
+	box-shadow: 2px 2px 10px black;
+}
+
+
+/* =========== Section Four ============= */
+
+.property {	
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.propertyNames {
+	background-color: black;
+	border: 2px solid black;
+	overflow-x: hidden;
+	transition: 0.5s;
+	border-radius: 10px;
+	padding: 5px;
+	margin: 10px;
+}
+
+
+/* =========== Footer ============= */
+
+.footer {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	background-color: #3D5B6B;
+	padding: 35px;
+	color: white;
+}
+.webName a {
+	color: white;
+}
+.webName span {
+	text-decoration: none;
+	color: white;
+}
+
+
+
+/* =========== Phone format ============= */
+
+@media (max-width: 760px) {
+
+#remove {
+	display: none;
+}
+
+
+.container {
+	width: 100%;
+	left: 50%;
+	margin-bottom: 0;
+}
+.title {
+	background: url("img/stars.jpg") no-repeat;
+	background-size: cover;
+	box-shadow: 2px 2px 10px black;
+	width: 100%;
+	min-height: 100px;
+	margin-bottom: 10px;
+	color: white;
+}
+.title h1 {
+	margin: 6px 2px 4px 2px;
+	font-size: 35px;
+}
+
+
+.infoArea {	
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+}
+.infoArea h3 {
+	font-size: 20px;
+}
+
+.describe {
+	width: 100%;
+	min-height: 200px;
+	background-color: black;
+	margin: 0 0 0 0;
+	padding: 10px;
+}
+.describe h5 {
+	font-size: 16px;
+}
+
+.features {
+	width: 100%;
+	min-height: 200px;
+	background-color: lightblue;
+	margin: 10px 0 0 0;
+	padding: 10px;
+}
+.features h5 {
+	font-size: 16px;
+}
+
+
+h2 {
+	font-size: 27px;
+	margin: 20px;
+}
+
+
+.flex-container {
+  padding-bottom: 30px;
+}
+.images img {
+	width: 95%;
+	height: 240px;
+	margin: 5px;
+	border-radius: 5px;
+	box-shadow: 2px 2px 10px black;
+}
+}
+
+
+
+/* =========== Tablet Format ============= */
+
+@media (min-width: 761px) and (max-width: 1224px) {
+}

@@ -1,0 +1,323 @@
+/* 
+App Name: Estate Properties  
+Author: Emmanuel A.O.
+Version: 1.0
+Design and Developed by: Emmanuel A.O
+*/
+
+/*
+======================================
+[ CSS TABLE CONTENT ]
+======================================
+
+ 1. General
+
+ 2. Hook Area
+ --------------Hook
+
+ 3. Navbar
+ --------------Navbar
+
+ 4. Section One
+ --------------Container
+ --------------PropertyDelete
+
+ 5. Section Two
+ --------------FormEdit
+ --------------ImageUpload
+
+ 6. Section Three
+ --------------ImageArea
+
+ 7. Footer
+ --------------Footer
+ --------------webName
+
+
+ 8. Phone Format:
+
+ a.  Hook Area
+ --------------#Remove
+
+ b. Section One
+ --------------Container
+ --------------PropertyDelete
+
+ c. Section Two
+ --------------FormEdit
+ --------------ImageUpload
+
+ d. Section Three
+ --------------ImageArea
+
+
+ 9. Tablet Format:
+
+ a. Section Three
+ --------------ImageArea
+
+
+======================================
+[ END CSS TABLE CONTENT ]
+======================================
+*/
+
+
+
+
+/* =========== General ============= */
+
+/*Remove Property Name & ID Display*/
+.form-group {
+	display: none;
+}
+
+
+body {
+	margin: 0;
+	padding: 0;
+	background: lightblue;
+	overflow-x: hidden;
+}
+
+
+/* =========== Hook Area ============= */
+
+.hook {
+	display: flex;
+	flex-direction: row;
+	background-color: #212529;
+	color: white;
+	justify-content: space-around;
+}
+.hook p {
+	font-size: 12px;
+	margin: 5px;
+}
+
+
+/* =========== Navbar ============= */
+
+.navbar {
+	opacity: 0.8;
+	font-size: 18px; 
+	background-color: #212529;
+}
+
+
+/* =========== Section One ============= */
+
+.container {
+	width: 80%;
+	left: 50%;
+	background: #3D5B6B;	
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin-bottom: 30px;
+} 
+.propertyDelete input {
+	font-size: 15px;
+	color: white;
+	background: black;
+	border-radius: 10px;
+	height: 50px;
+	margin: 5px 5px 20px 5px;
+	width: 100%;
+}
+
+
+/* =========== Section Two ============= */
+
+.formEdit {
+	width: 70%;
+}
+.formEdit p {
+	color: lightblue;
+}
+.formEdit input  {
+	font-size: 18px;
+	background: none;
+	border-radius: 10px;
+	border-bottom: 5px solid black;
+	border-right: 5px solid black;
+	height: 50px;
+	width: 100%;
+	margin: 5px;
+	padding: 5px;
+	color: white;
+}
+.formEdit button {
+	color: white;
+	height:35px;
+	border: 1px solid #ccc;
+	border-radius: 6px;
+	padding: 5px;
+	background-color: black;
+	margin-bottom: 30px;
+}
+.formEdit button:hover {
+	background-color: #212529;
+}
+
+
+.imageUpload {
+	text-align: center;
+	padding-bottom: 25px;
+}
+.imageUpload input {
+	background: none;
+	border-radius: 10px;
+}
+.imageUpload input:hover {
+	border-radius: 0;
+}
+
+
+/* =========== Section Three ============= */
+
+.imageArea {
+	box-sizing: border-box;
+	white-space: nowrap;
+	overflow: hidden; 
+	width: 90%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	text-align: center;
+	justify-content: center;
+	padding-bottom: 30px;
+}
+.imageArea input {
+	position: relative;
+	left: 180px;
+	top: 10px;
+	z-index: 1;
+	border-radius: 5px;
+	text-align: center;
+	background-color:lightblue;
+	box-shadow: 2px 2px 10px black;
+}
+.images img {
+	position: relative;
+	z-index: -1;
+	width: 300px;
+	height: 240px;
+	margin: 5px 10px 20px 10px;
+	border-radius: 5px;
+	box-shadow: 2px 2px 10px black;
+}
+
+
+
+/* =========== Footer ============= */
+
+.footer {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	background-color: #172730;
+	padding: 35px;
+	color: white;
+}
+.webName a {
+	color: white;
+}
+.webName span {
+	text-decoration: none;
+	color: white;
+}
+
+
+
+/* =========== Phone Format ============= */
+
+@media (max-width: 760px) {
+
+#remove {
+	display: none;
+}
+
+
+.container {
+	width: 100%;
+	left: 50%;
+	background: #3D5B6B;	
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin-bottom: 30px;
+} 
+
+
+.propertyDelete h1 {
+	text-align: center;
+	font-size: 25px;
+	color: white;
+}
+.propertyDelete input {
+	width: 100%;
+	font-size: 13px;
+	color: white;
+	background: black;
+	border-radius: 8px;
+	height: 30px;
+	margin: 5px 5px 20px 5px;
+}
+
+
+.formEdit {
+	width: 90%;
+}
+
+
+.imageUpload h3 {
+	font-size: 18px;
+}
+
+.imageArea {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+	flex-direction: column;
+	justify-content: center;
+	padding-bottom: 30px;
+}
+.imageArea input {
+	left: 0px;
+	top: 10px;
+	position: relative;
+	border-radius: 5px;
+	text-align: center;
+	background-color:lightblue;
+	box-shadow: 2px 2px 10px black;
+}
+}
+
+
+
+/* =========== Tablet Format ============= */
+
+@media (min-width: 761px) and (max-width: 1224px) {
+
+.imageArea {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+	flex-direction: column;
+	justify-content: center;
+	padding-bottom: 30px;
+}
+.imageArea input {	
+	left: 0px;
+	top: 10px;
+	position: relative;
+	border-radius: 5px;
+	text-align: center;
+	background-color:lightblue;
+	box-shadow: 2px 2px 10px black;
+}
+}
