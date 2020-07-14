@@ -249,7 +249,7 @@ function initMap() {
 // GOOGLE MAPS API KEY
 </script>
 <script async defer
-  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAV9Os9z8qYyPe-Psfqq2XsOQqNqpblvM0&callback=initMap">
+  src="https://maps.googleapis.com/maps/api/js?key= &callback=initMap">
 </script>
 
 
