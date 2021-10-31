@@ -1,5 +1,5 @@
 # Estate-Properties-App
-Repository contains source code of real-estate website built with php, & google-maps api's used in developing the website.
+Repository contains code of real-estate based website built with php, using google-maps api's. Other interesting map api's are also contained within this repository.
 
 The application allows users to sign-up and showcase properties for rent or sale. Application developed with PHP, HTML, CSS, Bootstrap, JavaScript & Regex.
 
