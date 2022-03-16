@@ -1,0 +1,240 @@
+
+Estate Properties Web-Application:
+Estate Properties is a web-based application that alllows users to sign-up and showcase real estate properties available for rent or sale as markers on a Google Map and as a Page within the application webpage. Property details; description and images can be uploaded & edited after user sign-up. Non signed-in users can freely access the site to veiw property listings. The application is responsive and multiple-platform compatible. Program developed with PHP, HTML, CSS, JavaScript, Regex, and Bootstrap.
+
+
+
+App Name: Estate Properties  
+Author: Emmanuel A.O.
+Created: 16-May-2020
+Version: 1.0
+email: web4citizen@gmail.com
+
+
+
+Changelog:
+Version 1.0 | 10-June-2020
+Updated: First Version    
+Initial Release
+
+
+
+Licences:
+The Images and Icons used in this application (Estate Properties Web-Application) are free and allow for free commercial use without attribution required. The Images and Icons were obtained from:
+Pixabay.com (Licence: https://pixabay.com/service/terms/#license).
+Flaticon.com (Licence: https://www.freepikcompany.com/legal#nav-flaticon).
+
+
+
+Folders & Files Included:
+
+	Root_Directory:
+	____________dbConfig.php
+	____________map.css
+	____________index.php
+	____________page.css
+	____________page.php
+	
+	"create":
+	____________create.php
+	____________createdb.php
+	____________"css"_Folder: create.css
+
+	"documentation":
+	____________documentation.txt
+
+	"edit":
+	____________delete.php
+	____________deletProperty.php
+	____________edit.php
+	____________editdb1.php
+	____________editdb2.php
+	____________"css"_Folder: edit.css
+
+	"img":______Used-Images
+
+	"uploads":__Uploaded Image Files
+
+	"login":
+	____________config.php
+	____________login.php
+	____________logout.php
+	____________register.php
+	____________reset-password.php
+	____________"css"_Folder: login.css
+
+
+
+
+Fonts Used:
+1. Times
+2. Satisfy_"https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet"
+
+
+Color Theme:
+-------------Lighblue
+-------------"#3D5B6B"
+-------------Black
+-------------White
+
+
+Images Used:
+
+head.jpg: "https://pixabay.com/images/download/apartment-3564955_1280.jpg"
+
+stars.jpg: "https://pixabay.com/photos/stars-rating-travel-four-hotel-1128772/"
+
+home1.jpg: "https://pixabay.com/photos/kitchen-home-interior-modern-room-2165756/"
+
+home2.jpg: "https://pixabay.com/photos/architecture-family-house-front-yard-1836070/"
+
+home3.jpg: "https://pixabay.com/photos/interior-living-room-furniture-2685521/"
+
+home4.jpg: "https://pixabay.com/photos/furniture-living-room-modern-998265/"
+
+home5.jpg: "https://pixabay.com/photos/large-home-residential-house-389271/"
+
+
+
+Icons Used:
+
+facebook.png:  "https://image.flaticon.com/icons/svg/2111/2111392.svg"
+
+linkedin.png:  "https://image.flaticon.com/icons/svg/2111/2111532.svg"
+
+twitter.png:   "https://image.flaticon.com/icons/svg/733/733635.svg"
+
+info.png:      "https://www.flaticon.com/free-icon/info_785822?term=info&page=1&position=16"
+
+favi.png:	   "https://www.flaticon.com/free-iconhelp-information-button-with-a-hand-with-a-finger-point					ing-on-it_44286?term=IT&page=1&position=84"
+
+
+
+
+
+Navbar developed with Bootstrap version 4.4.1, with jQuery-3.4.1.
+-"https://getbootstrap.com/docs/4.4/components/navbar/">
+
+
+
+
+User Guide:
+
+Folder strucure has been Compartmentalized into Sections for easy read and edits.
+
+1. Root Directory: Holds the Homepage and each individual property Page file.
+
+2. Create: Holds files that control submission of new property listings.
+
+3. Login: Holds the register, login, logout and password reset functionality.
+
+4. Edit: All changes to property listing from deletion to edits.
+
+
+
+
+CSS Files:
+
+- Comments have also been used to explain each section area. 
+- Classes and Id's have been structured neatly to follow the html page format for easy read. 
+- The top contains styling for laptop and desktop devices while the later areas contain styling for mobile phones and tablets respectively.
+- For easy navigation all CCS Files possess a Table of Contents Menu with the following structure:
+	 		General
+	        Navbar
+	        Section One
+	        Section...
+	        Footer
+	        Phone Format
+	        Tablet Format.
+
+
+
+
+JAVASCRIPT FUNCTIONS:
+
+---------------------------------------------------------------------------------------------------
+"function initMap()" +
+
+" </script>
+<script async defer
+  src="https://maps.googleapis.com/maps/api/js?key= &callback=initMap">
+</script> "
+
+-With the use an API key that should be placed in the "key=" area, this function and script displays a Google Maps within the webpage browser and showcases property latitude and longitude as markers as well as the marker name and link to the property details page, which was stored in the SQL Databse.
+---------------------------------------------------------------------------------------------------
+
+
+
+---------------------------------------------------------------------------------------------------
+"<script>
+const element = document.querySelector('.animate');
+element.classList.add('animate__animated', 'animate__flipInX');
+</script>"
+
+-The code above uses the "animate.css cdn" to trigger a flip animation of the head title "Estate Properties" in the Homepage.
+---------------------------------------------------------------------------------------------------
+
+
+
+---------------------------------------------------------------------------------------------------
+"function plusSlides(n), function currentSlide(n), function showSlides(n)"
+
+-These functions enable the slider in the Homepage to function.
+It was obtained from: "https://www.w3schools.com/howto/howto_js_quotes_slideshow.asp"
+---------------------------------------------------------------------------------------------------
+
+
+
+---------------------------------------------------------------------------------------------------
+" <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script> "
+
+-A Javscript CDN for Bootstrap that works with the Navbar
+---------------------------------------------------------------------------------------------------
+
+
+
+---------------------------------------------------------------------------------------------------
+"function getLocation()"
+
+-Used in the "create" page, this function helps identify the user latintude and longitude coordinates that will be used to identify property location on the map.
+---------------------------------------------------------------------------------------------------
+
+
+
+---------------------------------------------------------------------------------------------------
+"function myAlert() {
+  alert("The Latitude and longitude below identifies your current location. Add the cordinates into specified form area if your current location is the location of the property you are selling.");
+}"
+
+-This function, upon click of the "Info" button, triggers an an information alert.
+---------------------------------------------------------------------------------------------------
+
+
+
+---------------------------------------------------------------------------------------------------
+"function lettersOnly(input) {
+    var regex = /[^a-z 0-9.,-]/gi;
+    input.value = input.value.replace(regex, "");
+}"
+
+-For security purposes, allows for control of user input by disallowing non-numerical and alphabetical characters.
+---------------------------------------------------------------------------------------------------
+
+
+
+
+Note:
+If you have any questions about customization, please contact me via e-mail or through my profile page. I’ll help you as soon as possible.
+
+
+
+
+
+
+
+
+
+
+
